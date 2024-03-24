@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Navbar*/
+#nav-bar{
+  background-color: #f5f5f0;
+}
+.custom-dropdown-title > .nav-link {
+  color: black;
+  font-weight: 800;
+  position: relative;
+}
+.custom-dropdown-menu .dropdown-menu a{
+  text-decoration: none;
+  background-color: #f5f5f0 !important;
+}
+.custom-dropdown-title .show .dropdown-menu{
+  color: black !important; /* Set the background color of the dropdown menu when active */
+  font-weight: 800;
+}
+/* Color for the dropdown title when dropdown is open */
+.custom-dropdown-title.show > .nav-link {
+  color:  #b30000 !important;
+}
+.custom-dropdown-title .nav-link:hover::before {
+  content: ''; /* Add content to the ::before pseudo-element */
+  position: absolute; /* Set position to absolute */
+  bottom: 0; /* Adjust the position of the border */
+  left: 0; /* Ensure the border starts from the left */
+  width: 100%; /* Adjust the length of the bottom border */
+  border-bottom: 2px solid #b30000; /* Bottom border on hover */
+}
+.custom-dropdown-title .nav-link:hover{
+  color: #b30000 !important;
+}
+.custom-nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid transparent; /* Initially transparent */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+.custom-nav-link:hover::before {
+  border-color: #b30000; /* Border color on hover */
+}
+.custom-nav-link a{
+  color: black !important;
+  font-weight: 800;
+  text-decoration: none !important;
+}
+
+
+.custom-nav-link{
+  position: relative;
+}
+.custom-nav-link:hover a{
+  color: #b30000 !important; 
+}
+.custom-link{
+  color: black;
+}
+
+.custom-link:hover{
+  color: #b30000 !important;
+}
+
+.nav-bag{
+  display: flex;
+  align-items: center;
+}
+.nav-bag:hover svg {
+  fill: #b30000; /* Color for the heart icon on hover */
+}
+
+
+.bag-quantity{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background: yellow;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  margin-left: 5px;
+}
+
+/*Not Found*/
+.not-found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(68,68,68);
+  min-height: 80vh;
+}
+
+.not-found h2{
+  font-size: 55px;
+}
+
+.not-found p{
+  font-size: 20px;
+}
+
+/*Admin Dahsboard*/
+.custom-side-nav-link{
+  position: relative;
+}
+
+.custom-side-nav-link {
+  color: black !important;
+  font-weight: 800;
+  text-decoration: none !important;
+}
+
+.custom-side-nav-link:hover::before {
+  border-color: #b30000; /* Border color on hover */
+}
+
+.custom-side-nav-link:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+  width: 100%; /* Extend the line to the full width of the side navbar */
+  border-bottom: 2px solid #b30000; /* Border color */
+}
+
+
+.custom-side-nav-link:hover{
+  color: #b30000 !important;
+}
+
+.side-navbar {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  border-right: 1px solid #ccc;
+  padding-top: 100px;
+  overflow-y: auto;
+}
+
+/* Home slider*/
+.zoom-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value (last parameter) as needed */
+}
+.carousel .carousel-indicators .active {
+  background-color: black;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+/* App.css */
+.zoom-effect {
+  animation: zoomInOut 5s infinite alternate; /* Adjust animation duration as needed */
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Start with normal size */
+  }
+  100% {
+    transform: scale(1.2); /* Zoom in to 110% size */
+  }
+}
+.btn-shop{
+  border-color: black !important;
+  color: black !important;
+  background-color: transparent !important;
+}
+.btn-shop:hover{
+  background-color: #b30000 !important;
+  color: black !important;
+  transition: 1s;
+}
+
+/*Categories*/
+.collection-container {
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hr-bold {
+  border: none;
+  border-top: 3px solid;
+  border-color: #b30000;
+  width: 100%;
+  opacity: 1;
+}
+
+.circle-container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #b30000;
+  position: absolute;
+  top: -130%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-categories{
+  background-color: #f5f5f0 !important;
+  color: black !important;
+  border-color: transparent !important;
+}
+.btn-categories:hover{
+  background-color: #b30000 !important;
+  color: white !important;
+  border-color: transparent !important;
+}
+
+/*products*/
+.card-product:hover{
+    transform: scale(1.1);
+} 
+.card-product:hover .product_actions {
+  opacity: 1; /* Make the icons visible */
+  visibility: visible; /* Make the icons visible */
+}
+
+.product_actions {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0; /* Hide the icons by default */
+  visibility: hidden; /* Hide the icons by default */
+  column-gap: 0.5rem; 
+  display: flex;
+  transition: all .2s cubic-bezier(0, 0, 0.05, 1);
+}
+
+.product_actions .action_btn {
+  display: inline-block;
+  margin: 0 5px;
+  color: black ;
+  font-size: 20px;
+}
+
+.product_actions .action_btn:hover {
+  color: white;
+}
+.action_btn{
+  width: 40px;
+  height :40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color:hsl(129,44%,94%); 
+  border: 1px solid  hsl(135, 5%, 68%); 
+  font-size:medium;
+  position: relative;
+} 
+.action_btn::before, 
+.action_btn::after {
+position: absolute;
+left: 50%;
+transform: translatex(-50%);
+transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+}
+
+.action_btn::before{
+content: '';
+top: -1px;
+border: .5rem solid transparent;
+border-top-color:black ;
+} 
+.action_btn::after {
+content: attr(aria-label);
+bottom: 120%;
+background-color: black;
+color:  hsl(0,0%,100%);
+font-size:x-small;
+white-space: nowrap;
+padding-inline: 0.625rem;
+border-radius: 0.25rem;
+line-height: 2.58;
+} 
+
+.action_btn::before, 
+.action_btn::after{ 
+opacity: 0;
+}
+.product_item:hover .product_actions,
+.action_btn:hover::before,
+.action_btn:hover::after{
+  opacity: 1;
+}
+.action_btn:hover::before,
+.actio_btn:hover::after{
+  transform: translateX(-50%) translateY(-0.5rem);
+}
+.action_btn:hover{
+  background-color: black;
+  border-color: rgb(48, 47, 47);
+}
+.btn-cart {
+  background-color: hsl(129, 44%, 94%) !important;
+  border: 1px solid hsl(135, 5%, 68%) !important;
+  color: black !important; /* Add this line */
+}
+
+.btn-cart::before, 
+.btn-cart::after{ 
+     opacity: 0;
+}
+.btn-cart:hover::before,
+.btn-cart:hover::after{
+       opacity: 1;
+}
+.btn-cart::before, 
+.btn-cart::after {
+position: absolute;
+left: 50%;
+transform: translatex(-50%);
+transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+}
+
+.btn-cart::before{
+  content: '';
+  top: -2px;
+  border: .5rem solid transparent;
+  border-top-color:black !important;
+  } 
+.btn-cart::after {
+  content: attr(aria-label);
+  bottom: 100%;
+  background-color: black !important;
+  color:  hsl(0,0%,100%) !important;
+  font-size:x-small;
+  white-space: nowrap;       
+  padding-inline: 0.625rem;              
+  border-radius: 0.25rem;              
+  line-height: 2.58;
+} 
+.btn-cart:hover::before,
+.btn-cart:hover::after{
+transform: translateX(-50%) translateY(-0.5rem);
+}
+
+.btn-cart:hover {
+  border-color: rgb(48, 47, 47) !important;
+}
